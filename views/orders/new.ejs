@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='stylesheet' href='/stylesheets/style2.css' />
+  <title>Welcome Resturant</title>
+</head>
+<body>
+  <nav>
+    <a href="/home">home</a>
+      &nbsp; | &nbsp;
+    <a href="/order/new">main page</a>
+    &nbsp; | &nbsp;
+    <a href="/order">All Orders</a>
+    </nav>
+    <main>
+      
+    <div>
+      
+<form action="/Resturant" id='add-review-form' method="POST">
+      <label>Add Order:
+        <select name="Food">
+<option disabled selected value>    </option>
+<option value="Food">Family Order</option>      
+<option value="Food">Chiken</option>
+<option value="Food">Pasta</option>
+<option value="Food">Pizza</option>
+<option value="Food">Salad</option>
+<option value="Food">Dessert</option>
+<option value="Drink">Wine</option>
+<input type="number" name="order" min="1" max="5">
+          </select>
+      </label><br>
+  <label>price:
+<input type="number" name="Foods" selelect min="#10" max="$200">
+        </select>
+      </label><br>
+      <label>Tip:
+        <input type="number" name="tip" min="#5" max="#100">
+      </label><br>
+      <input type="submit" value="Place Order">
+    </form>    
+  </div>
+  </main>
+</body>
+</html>

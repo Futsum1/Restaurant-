@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lobster', cursive;
+    size: 40%; 
+}
+
+nav{
+    background: grey;
+    text-align: center;
+    height: 25px;
+}
+main{
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ4_M0rg8Of-MB-1Xwp9WkfzQYmVeb-fxMFQA&usqp=CAU');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    padding: 15px;
+  }
+  form{
+    border: 2px solid lightgreen;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    padding: 100px;
+    margin: 3px auto;
+    background: lightblue;
+    border-radius: 20px;
+    width: 50%;
+    height: 90%;
+  }
+  .review{
+   background: red;
+   text-align: center;
+   padding: 10px;
+   margin: 25px;
+  }
+  button{
+    color: black;
+  }
+  

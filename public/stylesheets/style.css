@@ -1,8 +1,98 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+* {
+  box-sizing: border-box;
+  font-family: 'Lobster', cursive;
+  
 }
-
-a {
-  color: #00B7FF;
+main{
+  width: 100%;
 }
+  .table1{
+    background: url('https://listofwhat.com/wp-content/uploads/indian-food-300x225.jpg');
+    width: 45em;
+    height: 20em;
+    border: 4px solid gray;
+  }
+  .table2{
+   background: url('https://www.ambitiouskitchen.com/wp-content/uploads/2019/08/Greek-Chicken-Kabobs-4.jpg');
+   background-position: center; 
+   background-repeat: no-repeat; 
+   background-size: cover; 
+   width: 22em;
+   height: 15em;
+   margin: 20px 0;
+   border: 3px solid gray;
+  }
+  .table3{
+   background: url('https://data.thefeedfeed.com/static/2020/01/07/15784169145e14bb12d643a.jpg');
+   width: 22em;
+   height: 15em;
+   margin: 20px 0;
+   border: 3px solid gray;
+   position: absolute;
+   left: 375px;
+   bottom: 367px;
+  }
+  .table4{
+   background: url('https://avoeatery20-6b83.kxcdn.com/wp-content/uploads/2020/07/quinoa_avocado_bowl_Hero.png');
+   background-position: center; 
+   background-repeat: no-repeat; 
+   background-size: cover; 
+   width: 22em;
+   height: 15em;
+   margin: 20px 0;
+   border: 3px solid gray;
+  }
+  .table5{
+   background: url('https://mk0pluginrepublajnv1.kinstacdn.com/wp-content/uploads/2018/08/ivan-torres-478678-unsplash.jpg');
+   background-position: center; 
+   background-repeat: no-repeat; 
+   background-size: cover; 
+   width: 22em;
+   height: 15em;
+   margin: 14px 0;
+   border: 3px solid gray;
+   position: absolute;
+   left: 375px;
+   bottom: 110px;
+  }
+  .table6{
+   background: url('https://cdn1.stockyards.com/wcsstore/StockYards/images/catalog/1630_27322_01syx.jpg?height=378&width=345'); 
+   background-position: center; 
+   background-repeat: no-repeat; 
+   background-size: cover; 
+   width: 25em;
+   height: 320px;
+   margin: 19px 0;
+   border: 5px solid gray;
+   position: absolute;
+   left: 47em;
+   top: 7px;
+  }
+  .table7{
+   background: url('https://cdn.livekindly.co/wp-content/uploads/2018/07/white-wine-2.jpeg');
+   background-position: center; 
+   background-repeat: no-repeat; 
+   background-size: cover; 
+   width: 25em;
+   height: 503px;
+   margin: 19px 0;
+   border: 5px solid gray;
+   position: absolute;
+   left: 47em;
+   top: 350px;
+   bottom: 10px;
+  }
+   a{
+     background: lightblue;
+     color: black;
+     border: 1px solid green;
+     
+    }
+    ul{
+        color: red;
+        background: white;
+        width: 100px;
+      }
+     
+         
+ 
