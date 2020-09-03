@@ -7,7 +7,7 @@ router.get('/', foodsCtrl.index);
 /* GET users listing. */
 router.get('/new', foodsCtrl.new); 
 // Post flights
-router.post('/', foodsCtrl.create);
+// router.post('/', foodsCtrl.create);
 
 router.get('/:id/', foodsCtrl.show);
 
