@@ -5,9 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel='stylesheet' href='/stylesheets/style.css'/>
-    <title>Welcome Well Eat Resturant</title>
+    <title>Welcome </title>
 </head>
 <body>
-  
-</body>
+  <% if (orders.length > 0) { %>
+    <table style="width:100%">
+            <tr>
+              <th>Food</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Tip</th>
+            </tr>
+            <% orders.forEach(function(order) { %>
+            <tr>
+                <td><%= order.food %></td>
+                <td><%= order.quantity %></td>
+                <td><%= order.price %></td>
+                <td><%= order.tip %></td>
+                <td><a href="/orders/<%=order._id%>">Details</a></td>
+                <td>
+                  <form action="/orders/<%=order._id%>?_method=DELETE" method="POST">
+                    <button type="submit">X</button>
+                  </form>
+                </td>
+            </tr>
+            <%})%>
+          </table>
+      <% } else {%>
+      <h1>You Don't Have Any Orders Yet</h1>
+      <% } %>
+      </body>
 </html>

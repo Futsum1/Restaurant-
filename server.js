@@ -12,6 +12,7 @@ var methodOverride = require('method-override')
 var indexRouter = require('./routes/index');
 var orderRouter = require('./routes/orders');
 var foodRouter  = require('./routes/foods');
+var reviewRouter = require('./routes/reviews');
 
 var app = express();
 require('./config/database');
@@ -46,6 +47,8 @@ app.use(methodOverride('_method'));
 app.use('/', indexRouter);
 app.use('/orders', orderRouter);
 app.use('/foods', foodRouter)
+app.use('/', reviewRouter)
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

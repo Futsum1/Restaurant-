@@ -1,33 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel='stylesheet' href='/stylesheets/style4.css' />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel='stylesheet' href='/stylesheets/style4.css' />
 </head>
 <body>
+  <main>
+    <body>
       <div>
         <main>
-        <h1 class='food'>Food</h1> 
-          <h1 class='Price'>Price</h1>
-          </main>
+          <a href="/">Home</a>
+          <ul class='food' name='food'>Food: <%= order.food %></ul>
+          <ul class='Price'>Price: <%= order.price %></h1>
+          <ul class='Price'>Tip: <%= order.tip %></ul>
+          <a href="/orders<%= order.id %>/order"></a>
+        <a href="/orders">Orders List</a>
+  
+    <form action="/orders/<%= order.id %>?_method=PUT" method="POST" autocomplete="off">
+        <input type="text" name="food"  value="<%=order.food %>">
+        <input type="number" name="price" value="<%= order.price %>">
+        <input type="number" name="tip" value="<%= order.tip %>">
+        <button type="submit">Update Order</button>
+      </form>
       </div>
-      <div>
-  <form id="add-review-form" method="POST"
-    action="/orders/<%= order._id %>/reviews">
-    <label>Review:</label>
-    <textarea name="content"></textarea>
-    <label>Rating:</label>
-    <select name="rating">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-    </select>
-    <input type="submit" value="Add Review">
-  </form>
-  </div>
+      
+        <form id="add-review-form" method="POST" action="/orders/<%= order._id %>/reviews">
+          <label>Review: </label>
+          <textarea name="comment"></textarea>
+          <label>Rating: </label>
+          <select name="rating">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            <input type="submit" value="Add Review">
+            </form>  
+          </div>
+          <% if (order.reviews.length > 0) { %>
+            <h1>Reviews:</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Review</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% order.reviews.forEach((review) => { %>
+                    <tr>
+                        <td><%=review.comment%></td>
+                        <td><%=review.rating%></td>
+                        <td>
+                            <form action="/reviews/<%= review._id %>?_method=DELETE" method="POST">
+                                <button type="submit">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+            <% } %>
+  </main>
 </body>
 </html>

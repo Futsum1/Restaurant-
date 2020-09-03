@@ -10,12 +10,14 @@ const reviewSchema = new Schema({
      
 const  orderSchema = new Schema({
   user: {type: Schema.Types.ObjectId, ref: 'User'},
-  food: {type: Schema.Types.ObjectId, ref: 'Food'},
+  food: String,
   reviews: [reviewSchema],
   price: Number,
   quantity: Number,
   tip: Number
 });
+
+
 
 
 module.exports = mongoose.model('Order', orderSchema);

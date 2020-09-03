@@ -2,7 +2,13 @@ const express = require('express');
 const router = express.Router();
 const userCtrl = require('../controllers/user')
 
+router.get('/foods/:id/users/new', usertsCtrl.new);
 router.post('/foods/:id/users', userCtrl.create)
+
+function isLoggedIn(req, res, next) {
+  if ( req.isAuthenticated() ) return next();
+  res.redirect('/auth/google');
+}
 
 module.exports = router;
 

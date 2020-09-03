@@ -1,4 +1,4 @@
-<%- include('../partials/header') %>
+<%- include('../partials/header') { %>
 <section id="show-page">
     <div>Food: </div>
     <div><%= order.food %></div>
@@ -8,6 +8,7 @@
     <div><%= order.review %></div>
     <div> </div>
     <div><%= order.price.join(', ') %></div>
+    <% }); %>
     <div> </div>
     <div></div>
   </section>

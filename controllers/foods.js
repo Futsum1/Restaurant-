@@ -36,6 +36,7 @@ module.exports = {
 
 
   function newFood(req, res) {
+    console.log("it's hittting the newOrder")
    res.render('foods/new');
 
 }
