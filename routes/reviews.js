@@ -10,7 +10,7 @@ router.delete('/reviews/:id', isLoggedIn, reviewCtrl.delete);
 
 function isLoggedIn(req, res, next) {
     if ( req.isAuthenticated() ) return next();
-    res.redirect('/auth/google');
+    res.redirect('/auth/google'); 
   }
 
 module.exports = router;
