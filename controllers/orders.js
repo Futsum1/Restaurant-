@@ -29,17 +29,21 @@ function deleteOrder(req, res) {
 
 
 function edit(req, res) {
-  const order = Order.getOne(req.params.id);
+ Order.findById(req.params.id, function(err, order) {
   res.render('orders/edit', { order });
+ });
 }
 
 function update(req, res) {
   Order.findByIdAndUpdate(req.params.id, req.body, function(err, order) {
-    if (!order.user.equals(req.user._id)) { 
-      console.log(err)
+    // if (!order.user.equals(req.user._id)) { 
+    //   console.log(err)
+    //   res.redirect(`/orders/${req.params.id}`);
+    // }
+
+    order.save(function(err){
       res.redirect(`/orders/${req.params.id}`);
-    }
-    res.redirect(`/orders/${req.params.id}`);
+    })
   });
   
 }

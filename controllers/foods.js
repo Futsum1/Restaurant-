@@ -15,16 +15,6 @@ module.exports = {
     });
   }
 
-//   function create(req, res) {
-//     for (let key in req.body) {
-//       if (req.body[key] === '') delete req.body[key];
-//           };
-//     const food = new Foods(req.body);
-//     food.save(function(err) {
-//         if (err) return res.render('foods/new');
-//         res.redirect('/foods');
-//     });
-//     }
     
   function show(req, res){
     Food.findById(req.params.id, function(err, food){
