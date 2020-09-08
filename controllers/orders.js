@@ -36,10 +36,7 @@ function edit(req, res) {
 
 function update(req, res) {
   Order.findByIdAndUpdate(req.params.id, req.body, function(err, order) {
-    // if (!order.user.equals(req.user._id)) { 
-    //   console.log(err)
-    //   res.redirect(`/orders/${req.params.id}`);
-    // }
+    
 
     order.save(function(err){
       res.redirect(`/orders/${req.params.id}`);

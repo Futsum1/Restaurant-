@@ -8,17 +8,21 @@
   <link rel='stylesheet' href='/stylesheets/style4.css' />
 </head>
 <body>
+  <nav>
+    <a href="/">home</a>
+    &nbsp; | &nbsp;
+    <a href="/foods">All Order</a>
+    &nbsp; | &nbsp;
+    <a href="/orders">Complete Detail Order</a>
+  </nav>
   <main>
     <body>
       <div>
         <main>
-          <a href="/">Home</a>
           <ul class='food' name='food'>Food: <%= order.food %></ul>
           <ul class='Price'>Price: <%= order.price %></h1>
           <ul class='Price'>Tip: <%= order.tip %></ul>
           <a href="/orders<%= order.id %>/order"></a>
-        <a href="/orders">Orders List</a>
-  
     <form action="/orders/<%= order.id %>?_method=PUT" method="POST" autocomplete="off">
         <input type="text" name="food"  value="<%=order.food %>">
         <input type="number" name="price" value="<%= order.price %>">
