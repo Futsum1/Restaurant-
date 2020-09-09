@@ -11,7 +11,7 @@
 ### HTML, CSS, Javascript, Node.js, Mongoose, Mongodb, Express, Heroku 
 
 ## Getting Started
-#### (http://github.com)- Heroku!
+#### (https://restfutsum.herokuapp.com/)- Heroku!
 
 
 #### [Trello](https://trello.com/b/McbqmrnU/project2)
@@ -20,7 +20,7 @@
 
 #### [ERD](https://app.lucidchart.com/documents/edit/08e92f68-5b0b-4f20-a0a6-6b38635067ff/0_0)
 
-## next steps 
+## next step
 * steps
 1. more to use responsiv and grid for css
 2. Gui Design 
