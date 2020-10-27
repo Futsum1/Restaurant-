@@ -18,6 +18,7 @@ const MENU = {
   pizza: 25,
   salad: 15,
   dessert: 10,
+  salmon: 40,
   wine: 30
 }
 

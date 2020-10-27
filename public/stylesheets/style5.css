@@ -1,6 +1,5 @@
 body{
-   background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSwT7QqwMGcTG-XjMDi2zkwm7HKApwed5T3CQ&usqp=CAU');
-   color: rgb(29, 31, 32);
+   color: rgb(121, 128, 132);
    size: 40px;
 }
 nav{
@@ -8,5 +7,5 @@ nav{
    text-align: center;
    height: 25px;
    margin: 3px;
-   width: 118em;
+   width: 100%;
 }
