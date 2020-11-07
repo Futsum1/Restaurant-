@@ -3,19 +3,59 @@
   font-family: "Lobster", cursive;
 }
 nav {
-  background: rgb(139, 139, 139);
+  background: rgb(14, 53, 59);
   text-align: center;
-  height: 25px;
+  height:45px;
   margin: 3px;
   width: 100%;
+  color: rgb(200, 41, 41);
+  padding: 20px;
+  font-size: 20px;
 }
-form {
+main{
+  margin: 70px;
+  padding: 50px; 
+  
+}
+/*.form-group-b {
+  background: rgb(181, 62, 62);
   border: 2px solid rgb(233, 239, 233);
   text-align: center;
-  padding: 30px;
   font-size: 20px;
-  padding: 300px;
-  background: rgb(246, 246, 246);
   border-radius: 20px;
+  padding: 30%;
+  padding-top: 100px;
   width: 100%;
+} */
+.form-group-b{
+  background: rgb(239, 233, 233);
+  border-radius: 5px;
+  color: black;
+  display: inline;
+  color: rgb(10, 10, 42);
+  border: 1px solid rgb(239, 233, 233);
+  height: 35em;
+  width: 44em;
+  display: flex;
+  display: block;
+  grid-gap: 90px;
+  padding: 14vmin;
+} 
+.form-btn{
+  display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.food{
+  height: 30px;
+  width: 400px;
+  border-radius: 5px;
+}
+input{
+  height: 35px;
+  width: 400px;
+  margin: 8px;
+  border-radius: 5px;
 }

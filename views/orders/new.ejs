@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel='stylesheet' href='/stylesheets/style2.css' />
   <title>Welcome Resturant</title>
 </head>
@@ -16,26 +17,30 @@
     &nbsp; | &nbsp;
     <a href="/orders">Details Order</a>
   </nav>
-      <form action="/orders" id='add-review-form' method="POST">
+<main class="form-group-a">
+      <form class="form-group-b" action="/orders" id='add-review-form' method="POST">
+        <div class="form-btn">
         <label>Add Order:
-          <select name="food">
-            <option value="chiken">Chiken</option>
-            <option value="pasta">Pasta</option>
-            <option value="pizza">Pizza</option>
-            <option value="dessert">Salmon</option>
-            <option value="salad">Salad</option>
-            <option value="dessert">Dessert</option>
-            <option value="wine">Wine</option>
+          <select class="food" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="food">
+            <option value="chiken">CHICKEN</option>
+            <option value="pasta">PASTA</option>
+            <option value="pizza">PIZZA</option>
+            <option value="dessert">SALMON</option>
+            <option value="salad">SALAD</option>
+            <option value="dessert">DESSERT</option>
+            <option value="wine">WINE</option>
           </select> 
         </label><br>
         <label>Quantity:
-          <input type="number" name="quantity" min="1" max="5">
+          <input type="number" name="quantity" min="1" max="#5">
         </label><br>
         <label>Tip: 
           <input type="number" name="tip" min="5" max="#100">
         </label><br>
         <input type="submit" value="Place Order">
+     </div>
       </form>
+    </main>
 </body>
 
 </html>
