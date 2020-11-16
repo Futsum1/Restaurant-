@@ -16,44 +16,54 @@
     &nbsp; | &nbsp;
     <a href="/orders">Complete Detail Order</a>
   </nav>
-  <main>
     <body>
+      <main class='main-Ctrl'>
+         <div> 
+            
+            <h3 class="final-card">Order Completed</h3>
+            <div class="">
+              <ul class="final-list">
+                <ol name='food'>Food: <%= order.food %></ol>
+                <ol>Price: <%= order.price %></ol>
+                <ol>Tip: <%= order.tip %></ol>
+                <a href="/orders<%= order.id %>/order"></a>
+              </ul>
+            </div>
+         
+         
+
+    <form  action="/orders/<%= order.id %>?_method=PUT" method="POST" autocomplete="off">
+      <div class="form-update">
+      <label for="food">Food:</label>
+      <input class="form-control" type="text" name="food" placeholder="Update food" value="<%=order.food %>">
+      <label for="food">Price:</label>
+      <input class="form-control" type="number" name="price" placeholder="Update price" value="<%=order.price %>">
+      <label for="food">Tip:</label>
+      <input class="form-control" type="number" name="tip" placeholder="Update tip" value="<%=order.tip %>">
+      <button type="submit">Update Order</button>
+      </form> 
+    </div>
+    </div>
+  </main>
+  <main>
+    <form class="form-review"  method="POST" action="/orders/<%= order._id %>/reviews">
       <div>
-        <main>
-          <ul class='food' name='food'>Food: <%= order.food %></ul>
-          <ul class='Price'>Price: <%= order.price %></h1>
-          <ul class='Price'>Tip: <%= order.tip %></ul>
-          <a href="/orders<%= order.id %>/order"></a>
-    <form action="/orders/<%= order.id %>?_method=PUT" method="POST" autocomplete="off">
-        <input type="text" name="food"  value="<%=order.food %>">
-        <input type="number" name="price" value="<%= order.price %>">
-        <input type="number" name="tip" value="<%= order.tip %>">
-        <button type="submit">Update Order</button>
-      </form>
-      </div>
-      
-        <form id="add-review-form" method="POST" action="/orders/<%= order._id %>/reviews">
-          <label>Review: </label>
-          <textarea name="comment"></textarea>
-          <label>Rating: </label>
-          <select name="rating">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
+    <label for="Review">Review of Order:</label>
+    <textarea name="comment" rows="4" cols="50"></textarea>
+    <label>Rating: </label>
+    <select name="rating">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
             <input type="submit" value="Add Review">
+            
             </form>  
           </div>
           <% if (order.reviews.length > 0) { %>
-            <h1>Reviews:</h1>
+            <h4>Reviews:</h4>
             <table>
-                <thead>
-                    <tr>
-                        <th>Review</th>
-                        <th>Rating</th>
-                    </tr>
-                </thead>
                 <tbody>
                     <% order.reviews.forEach((review) => { %>
                     <tr>
@@ -69,6 +79,6 @@
                 </tbody>
             </table>
             <% } %>
-  </main>
+          </main>
 </body>
 </html>

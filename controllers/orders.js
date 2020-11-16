@@ -22,6 +22,7 @@ const MENU = {
   wine: 30
 }
 
+
 function deleteOrder(req, res) {
   Order.findByIdAndDelete(req.params.id, function(err) {
       res.redirect('/orders');

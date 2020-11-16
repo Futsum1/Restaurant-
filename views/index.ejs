@@ -2,20 +2,19 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style2.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <nav class="nav-a"> <ul class="right">
-      <li>
+    <nav class="nav-home"> 
       <% if (user) { %>
-        <a href="/logout"><i class="material-icons left">trending_flat</i>Log Out</a>
+        <a href="/logout"><i class="material-icons left"  <span class="input-grooup-addon"></span><i class="glyphicon glyphicon-user"></i></span>  Log - Out</a>
       <% } else { %>
-        <a href="/auth/google"><i class="material-icons left"></i>Login with Google</a>
-      <% } %>
-      </li>
-    </ul></nav>
+        <a href="/auth/google"><i class="material-icons left" <span class="input-grooup-addon"></span><i class="glyphicon glyphicon-user"></i></span> Login with Google</a>
+      <% } %>  
+    </nav>
     <h1><%= title %></h1>
-    <p>Welcome to my Restaurant<%= title %></p>
-    <img src='https://www.foodiesfeed.com/wp-content/uploads/2019/05/red-fruit-and-vegetables-on-a-white-background-3.jpg'>
+    <h4 class="Welcome">Welcome to my Restaurant!<%= title %></h4>
+    <img  class="img-home" src='https://www.foodiesfeed.com/wp-content/uploads/2019/05/red-fruit-and-vegetables-on-a-white-background-3.jpg' style="width:100%">
   </body>
 </html>

@@ -10,6 +10,7 @@ const reviewSchema = new Schema({
      
 const  orderSchema = new Schema({
   user: {type: Schema.Types.ObjectId, ref: 'User'},
+  name: String,
   food: String,
   reviews: [reviewSchema],
   price: Number,

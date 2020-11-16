@@ -15,22 +15,36 @@ main {
   grid-gap: 40px;
   border: 1px solid whitesmoke;
 }
-nav {
+.glyphicon-user{
+  color: rgb(251, 251, 251);
+  
+
+}
+
+nav{
   background: rgb(14, 53, 59);
   text-align: center;
   height:45px;
-  margin: 3px;
   width: 100%;
   color: rgb(248, 4, 4);
   padding: 20px;
   font-size: 20px;
+  padding: 15px 32px;
 } 
+.nav-home{
+  background: rgb(14, 53, 59);
+  text-align: center;
+  height:45px;
+  width: 100%;
+  color: rgb(248, 4, 4);
+  font-size: 20px;
+}
 .card-1 {
-  background-color: rgb(54, 23, 23);
+  background-color:  rgb(54, 23, 23);
   border-radius: 2vmin;
   user-select: none;
   padding: 15px;
-  border: 3px solid rgb(141, 75, 75);
+  border: 3px solid  rgb(141, 75, 75);
   text-anchor: middle;
   display: block;
 }
@@ -108,7 +122,6 @@ li{
   background-color: whitesmoke;
   text-align: center;
   border-radius: 8px;
-  
 }
 .card-text{
   background-color: whitesmoke;
@@ -125,7 +138,25 @@ img{
   width: 310px;
   height: 250px;
 }
-/* .card-body {
+.img-home{
+  height: 700px;
+  border-radius: 25px;
+  background: url(paper.gif);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 20 stretch;
+  border-color: rgb(14, 53, 59);
+}
+.Welcome{
+  text-align:center;
+  color: rgb(8, 7, 7);
+  text-shadow:  2px rgb(30, 30, 13);
+  font-size: 30px;
+}
+.card-body-a {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -133,7 +164,7 @@ img{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-.card-1:hover .card-body {
+.card-1:hover .card-body-a {
   display: block;
 }
 .card-text-a {
@@ -143,6 +174,6 @@ img{
 .card-1 {
   position: relative;
   display: inline-block;
-} */
+}
 
 

@@ -20,9 +20,9 @@
 <main class="form-group-a">
       <form class="form-group-b" action="/orders" id='add-review-form' method="POST">
         <div class="form-btn">
-        <label>Add Order:
-          <select class="food" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="food">
-            <option value="chiken">CHICKEN</option>
+        <label>Add Order:</label>
+          <select class="food"  class="form-control"   name="food">
+            <option  value="chiken">CHICKEN</option>
             <option value="pasta">PASTA</option>
             <option value="pizza">PIZZA</option>
             <option value="dessert">SALMON</option>
@@ -31,13 +31,19 @@
             <option value="wine">WINE</option>
           </select> 
         </label><br>
-        <label>Quantity:
-          <input type="number" name="quantity" min="1" max="#5">
-        </label><br>
-        <label>Tip: 
-          <input type="number" name="tip" min="5" max="#100">
-        </label><br>
+        <label>Quantity:</label>
+          <input type="number" name="quantity"  placeholder="How many order.." min="1" max="#5">
+        
+          <label>First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label>Tip: </label>
+          <input type="number" name="tip" placeholder="$ Tip here.." min="5" max="#100">
+        
+          
         <input type="submit" value="Place Order">
+
+        
      </div>
       </form>
     </main>
