@@ -2,10 +2,12 @@
 #### My app is Resturant. Users can order foods and also they are able to edit update and delete .
 #
 
-## screenShots
+## Home Page:
 ## ![Home Page](https://i.imgur.com/7QaqyAQ.png)
+#
 
-##### ![All Order](https://i.imgur.com/QyCu05m.png)
+## Main Page:
+##### ![All Order](https://i.imgur.com/GQfFDjm.png)
 #
 
 ## Technologies Used 
