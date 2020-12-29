@@ -1,12 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
 
 body {
-    background-color: #dfecab;
+    /* background-color: #dfecab; */
     font-family: 'Calibri', sans-serif !important
 }
 .card-body {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
+    /* -webkit-box-flex: 1; */
+    /* -ms-flex: 1 1 auto; */
     flex: 1 1 auto;
     padding: 1.25rem
 }
@@ -19,36 +19,49 @@ nav {
     padding: 20px;
     font-size: 20px;
   }
-  .main-Ctrl{
-    color: rgb(110, 70, 85);
-  }   
+
 .final-list{
- background: #e3f2fd;
  font-size: 20px;
  text-align: center;
- margin-left: 150px;
- margin-right: 150px;
- border-radius: 10rem;
- padding: 15px;
+ border-radius: 1rem;
+ /* padding-top: 40px; */
 }
-.final-card {
-text-align: center;
-color: rgb(8, 7, 7);
-text-shadow: 2px rgb(226, 226, 209);
-text-shadow: 2px 2px rgb(49, 49, 24);
-font-size: 30px;
+
+main{ 
+  background-color: #DCEDC8;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  justify-content: space-between;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  grid-gap: 40px;
+  border: 1px solid whitesmoke;
 }
+
 .form-update{
 text-align: center;
-background-color: #e3f2fd;
-margin-left: 150px;
-margin-right: 150px;
-border-radius: 10rem;
-padding: 35px;
+margin-left: 50px;
+margin-right: 350px;
+/* padding: 35px; */
+margin:50px;
 }
 .form-review{
   margin: 20px;
   padding: 30px;
   margin-left: 150px;
   margin-right: 150px;
+}
+@import url("https://fonts.googleapis.com/css?family");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.container{
+  width: 400px;
+  background: #111;
+  padding: 20px;
 }

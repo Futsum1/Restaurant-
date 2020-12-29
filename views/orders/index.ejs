@@ -16,22 +16,25 @@
   </nav>
   <% if (orders.length > 0) { %>
     <table style="width:100%">
-            <tr>
-              <th class="col-sm-3" style="background-color:rgb(202, 48, 48);">Name</th>    
+            <tr> 
+              <th class="col-sm-3" style="background-color:rgb(181, 150, 119);">Name</th>
               <th class="col-sm-3" style="background-color:rgb(181, 150, 119);">Food</th>
               <th class="col-sm-3" style="background-color:rgb(181, 150, 119);">Quantity</th>
               <th class="col-sm-3" style="background-color:rgb(181, 150, 119);">Price</th>
               <th class="col-sm-3" style="background-color:rgb(181, 150, 119);">Tip</th>          
+              <th class="col-sm-3" style="background-color:rgb(181, 150, 119);">Date</th>          
               <th class="col-sm-3" style="background-color:rgb(161, 181, 119);">Details</th>          
               <th class="col-sm-3" style="background-color:rgb(202, 48, 48);">Delete</th>                    
             </tr>
             <% orders.forEach(function(order) { %>
             <tr>
-                <td class="col-sm-3"><%= order.name %></td>
+                
+                <td class="col-sm-3"><%= order.user_name %></td>
                 <td class="col-sm-3"><%= order.food %></td>
                 <td class="col-sm-3"><%= order.quantity %></td>
                 <td class="col-sm-3"><%= order.price %></td>
                 <td class="col-sm-3"><%= order.tip %></td>            
+                <td class="col-sm-3"><%= order.Date %></td>            
                 <td class="col-sm-3"><a href="/orders/<%=order._id%>">Details</a></td>
                 <td>
                   <form class="col-sm-3" action="/orders/<%=order._id%>?_method=DELETE" method="POST">

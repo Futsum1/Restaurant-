@@ -4,6 +4,7 @@ const Order = require('../models/order');
 module.exports = {
   create,
   delete: deleteReview,
+  edit
 };
 
 
@@ -27,3 +28,9 @@ function create(req, res) {
         });
     });
 }
+
+function edit(req, res) {
+    Review.findById(req.params.id, function(err, review) {
+     res.render('reviews/edit', { review });
+    });
+   }

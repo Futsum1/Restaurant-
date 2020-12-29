@@ -49,10 +49,13 @@ function update(req, res) {
 
 function create(req, res) {
   const order = new Order({
+    user_name: req.body.user_name,
     food: req.body.food,
     price: MENU[req.body.food],
     tip: req.body.tip,
-    quantity: req.body.quantity
+    quantity: req.body.quantity,
+    date_time: req.body.date_time
+    // time: req.body.time
   });
   order.user = req.user._id;
   
