@@ -1,26 +1,26 @@
 <%- include('../partials/header') { %>
-  <nav>
-    <a href="/">home</a>
-    &nbsp; | &nbsp;
-    <a href="/foods">All Order</a>
-  </nav>
+<nav>
+  <a href="/">home</a>
+  &nbsp; | &nbsp;
+  <a href="/foods">All Order</a>
+</nav>
 <section id="show-page">
-    <div>Food: </div>
-    <div><%= order.food %></div>
-    <div>Price: </div>
-    <div><%= order.price %></div>
-    <div>Review: </div>
-    <div><%= order.review %></div>
-    <div> </div>
-    <div><%= order.price.join(', ') %></div>
-    <% }); %>
-    <div> </div>
-    <div></div>
-  </section>
+  <div>Food: </div>
+  <div><%= order.food %></div>
+  <div>Price: </div>
+  <div><%= order.price %></div>
+  <div>Review: </div>
+  <div><%= order.review %></div>
+  <div> </div>
+  <div><%= order.price.join(', ') %></div>
+  <% }); %>
+  <div> </div>
+  <div></div>
+</section>
 
-  <br><br><h2>Reviews</h2>
-<form id="add-review-form" method="POST"
-  action="/orders/<%= order._id %>/reviews">
+<br><br>
+<h2>Reviews</h2>
+<form id="add-review-form" method="POST" action="/orders/<%= order._id %>/reviews">
   <label>Review:</label>
   <textarea name="content"></textarea>
   <label>Rating:</label>

@@ -5,11 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel='stylesheet' href='/stylesheets/style2.css' />
   <title>Welcome Resturant</title>
 </head>
+
 <body>
   <nav>
     <a href="/">home</a>
@@ -18,33 +20,29 @@
     &nbsp; | &nbsp;
     <a href="/orders">Details Order</a>
   </nav>
- <main class="form-group-a">
-      <form class="form-group-b" action="/orders" id='add-review-form' method="POST">
-        <div class="form-btn">
-          <label>Name: </label>
-          <input type="text" name="user_name"  placeholder="what's your name.."><br><br>
-
-        <label>Add Order:</label>
-          <select   class="form-control-a"   name="food">
-            <option  value="chiken">CHICKEN</option>
-            <option value="pasta">PASTA</option>
-            <option value="pizza">PIZZA</option>
-            <option value="salmon">SALMON</option>
-            <option value="salad">SALAD</option>
-            <option value="dessert">DESSERT</option>
-            <option value="wine">WINE</option>
-          </select> 
-        </label><br><br>
-        <label>Quantity:</label>
-          <input type="number" name="quantity"  placeholder="How many order.." min="1" max="#5"> <br><br>
-        
-        <label>Tip: </label>
-          <input type="number" name="tip" placeholder="$ Tip here.." min="5" max="#100"><br><br>
-
-        <input type="submit" value="Place Order"><br><br>
-     </div>
-      </form>
-    </main>
+  <div>
+    <form class="form-btn" action="/orders" id='add-review-form' method="POST">
+      <h1>Check Out</h1>
+      <h3>Name: </h3>
+      <input type="text" name="user_name" placeholder="what's your name.."><br><br>
+      <h3>Add Order:</h3>
+      <select class="form-control-a" name="food">
+        <option value="chiken">CHICKEN</option>
+        <option value="pasta">PASTA</option>
+        <option value="pizza">PIZZA</option>
+        <option value="salmon">SALMON</option>
+        <option value="salad">SALAD</option>
+        <option value="dessert">DESSERT</option>
+        <option value="wine">WINE</option>
+      </select>
+      </label><br><br>
+      <h3>Quantity:</h3>
+      <input type="number" name="quantity" placeholder="How many order.." min="1" max="#5"> <br><br>
+      <h3>Tip: </h3>
+      <input type="number" name="tip" placeholder="$ Tip here.." min="5" max="#100"><br><br>
+      <input class="button" type="submit" value="Place Order"><br><br>
+    </form>
+  </div>
 </body>
 
 </html>
