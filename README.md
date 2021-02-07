@@ -25,7 +25,7 @@
 
 #### [ERD](https://app.lucidchart.com/documents/edit/08e92f68-5b0b-4f20-a0a6-6b38635067ff/0_0)
 #
-## next step
-* steps
-1. more to use responsiv and grid for css
-2. Gui Design 
+## Next Step
+* Steps
+1. Using apply responsiv and grid  
+2. Gui Design.
