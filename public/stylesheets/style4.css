@@ -87,7 +87,6 @@ table {
   color: red;
   background: radial-gradient(rgb(0, 0, 0), transparent);
   width: 100%;
-  /* border: 0px; */
   border-radius: 4px;
 
 }
@@ -118,10 +117,6 @@ td, th {
   text-align: center;
   background-color: white;
 }
-/* .rating i {
-  color: green;
-  font-size: 13px
-} */
 
 .comment-text {
   font-size: 15px;
@@ -130,14 +125,4 @@ td, th {
   font-style: italic;
 }
 
-
-
-
-/* @import url("https://fonts.googleapis.com/css?family");
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-} */
 
