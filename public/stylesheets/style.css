@@ -12,7 +12,7 @@ main {
   padding-top: 10px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
-  grid-gap: 40px;
+  grid-gap: 20px;
   border: 0px solid whitesmoke;
 }
 .glyphicon-user{
