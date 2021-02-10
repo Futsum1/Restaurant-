@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Lobster", cursive;
+  /* font-family: "Lobster", cursive; */
 }
 main {
   background-color: rgb(154, 143, 133);
@@ -72,7 +72,7 @@ li{
   padding: 0px;
 }
 img{
-  width: 310px;
+  width: 314px;
   height: 250px;
 }
 .img-home{
